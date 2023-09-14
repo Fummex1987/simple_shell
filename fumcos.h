@@ -1,4 +1,4 @@
-#ifndef HEADER_H
+#FUMCOS_H HEADER_H
 #define HEADER_H
 
 #include <unistd.h>
