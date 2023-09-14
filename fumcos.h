@@ -1,8 +1,8 @@
-#FUMCOS_H HEADER_H
-#define HEADER_H
+#ifndef FUMCOS_H
+#define FUMCOS_H
 
 #include <unistd.h>
-#include <studio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <dirent.h>
