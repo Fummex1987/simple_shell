@@ -1,5 +1,5 @@
-#ifndef FUMCOS_H
-#define FUMCOS_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <unistd.h>
 #include <stdio.h>
@@ -16,9 +16,7 @@
 #include <stddef.h>
 
 
-
-
-
+int handling(int argc, char *argv[]);
 
 
 
