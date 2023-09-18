@@ -22,14 +22,13 @@ int handling(int argc, char *argv[])
 	char *arg1 = argv[1];
 	char *arg2 = argv[2];
 
-	write(STDOUT_FILENO, "Argument 1:", 16);
+	write(STDOUT_FILENO, "Argument 1:", 12);
 	write(STDOUT_FILENO, arg1, strlen(arg1));
 	write(STDOUT_FILENO, "\n", 1);
 
-	write(STDOUT_FILENO, "Argument 2:", 16);
+	write(STDOUT_FILENO, "Argument 2:", 12);
 	write(STDOUT_FILENO, arg2, strlen(arg2));
 	write(STDOUT_FILENO, "\n", 1);
 
 	return (0);
-
 }
