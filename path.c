@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 2)
 	{
-		char *error = "Usage: ./program <command>\n";
+		char *error = ":) /bin/ls\n";
 
 		write(STDERR_FILENO, error, strlen(error));
 		return (1);
