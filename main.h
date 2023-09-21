@@ -19,5 +19,15 @@
 int handling(int argc, char *argv[]);
 
 
+void print_function(const char *info);
+
+
+void show_prompt(void);
+
+
+void user_input(char *input, size_t input_size);
+
+
+void exe_prompt(void);
 
 #endif
