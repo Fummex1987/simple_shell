@@ -16,23 +16,7 @@
 #include <stddef.h>
 
 
-
-
-// print function
-void print_function(const char *info)
-
-//prompt display
-void  exe_prompt(void)
-
-//execute child process
-void exe_cmd(const char *info)
-
-// receive input from the user
-void user_input(char *info, size_t size)
-
-//two command line augment
-int main(int argc, char *argv[])
-
+int handling(int argc, char *argv[]);
 
 
 
