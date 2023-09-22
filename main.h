@@ -27,6 +27,11 @@ void show_prompt(void);
 
 void user_input(char *info, size_t size);
 
-void exe_cmd(const char *command)
-
+/**
+* exe_cmd - Execute a command.
+*
+* void -  This function creates a new child process using fork and executes
+* the given command in that child process.
+*/
+void exe_cmd(const char *command);
 #endif

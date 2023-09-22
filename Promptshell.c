@@ -12,10 +12,10 @@
 int main(void)
 {
 char command[300];
-while (true)
+while (1)
 {
 show_prompt();
-user_input(command, sizeof(command))
+user_input(command, sizeof(command));
 exe_cmd(command);
 }
 return (0);
