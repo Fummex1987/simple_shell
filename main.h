@@ -25,9 +25,8 @@ void print_function(const char *info);
 void show_prompt(void);
 
 
-void user_input(char *input, size_t input_size);
+void user_input(char *info, size_t size);
 
-
-void exe_prompt(void);
+void exe_cmd(const char *command)
 
 #endif

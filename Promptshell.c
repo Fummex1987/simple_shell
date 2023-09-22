@@ -11,12 +11,12 @@
  */
 int main(void)
 {
-char collect_input[300];
-while (1)
+char command[300];
+while (true)
 {
 show_prompt();
-user_input(collect_input, sizeof(collect_input));
-exe_prompt();
+user_input(command, sizeof(command))
+exe_cmd(command);
 }
 return (0);
 }
