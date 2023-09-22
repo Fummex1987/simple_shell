@@ -18,16 +18,12 @@
 #include <unistd.h>
 
 
-int main(int argc, char *argv[]);
-
-
+int main(void);
+void exe_cmd(const char *command);
 void print_function(const char *info);
-
-
 void show_prompt(void);
-
-
 void user_input(char *info, size_t size);
+
 
 /**
 * exe_cmd - Execute a command.
@@ -35,7 +31,7 @@ void user_input(char *info, size_t size);
 * void -  This function creates a new child process using fork and executes
 * the given command in that child process.
 */
-void exe_cmd(const char *command);
->>>>>>> 4118c90adc09c6db9e0b835c3a5e9a8c47860122
+
+
 
 #endif
