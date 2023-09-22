@@ -1,21 +1,28 @@
-#include <unistd.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - The main function
- * Return: void
+ *
+ * Return: Always success
  */
 
 int main(void)
 {
-	char a[] = "1\n";
+	char *prompt = "Shell$ ";
+	char *input = NULL;
+	size_t len = 0;
 
-	ssize_t bytesWritten = write(STDOUT_FILENO, a, sizeof(a) - 1);
-
-	if (bytesWritten != sizeof(a) - 1)
+	while (1)
 	{
-		perror("Error");
-		return (1);
+		write(STDOUT_FILENO, prompt, strlen(prompt));
+
+		if (getline(&input, &len, stdin) == -1)
+		{
+			perror("getline");
+			exit(EXIT_FAILURE);
+		}
+		free(input);
+		input = NULL;
 	}
 	return (0);
 }

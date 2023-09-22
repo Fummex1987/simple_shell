@@ -15,9 +15,4 @@
 #include <sys/wait.h>
 #include <stddef.h>
 
-
-int handling(int argc, char *argv[]);
-
-
-
 #endif
