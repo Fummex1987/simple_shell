@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+ * user_input - Read user input from stdin.
+ *
+ * This function reads a line of text from the standard input (stdin) and stores
+ * it in the 'info' buffer. It also handles the case where the input is an
+ * empty line or an error occurs.
+ *
+ * @param info: A buffer to store the user input.
+ * @param size: The size of the buffer.
+ * @return: None
+ */
+
+void user_input(char *info, size_t size)
+{
+if (fgets(info, size, stdin) == NULL)
+{
+if (feof(stdin))
+{
+
+print_function("\n");
+exit(EXIT_SUCCESS);
+}
+else
+{
+print_function("ERROR\n");
+exit(EXIT_FAILURE);
+}
+}
+info[strcspn(info, "\n")] = '\0';
+}
+
