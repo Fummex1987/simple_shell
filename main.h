@@ -15,10 +15,9 @@
 #include <sys/wait.h>
 #include <stddef.h>
 
-<<<<<<< HEAD
-=======
 
-int handling(int argc, char *argv[]);
+
+int main(int argc, char *argv[]);
 
 
 void print_function(const char *info);
@@ -37,4 +36,5 @@ void user_input(char *info, size_t size);
 */
 void exe_cmd(const char *command);
 >>>>>>> 4118c90adc09c6db9e0b835c3a5e9a8c47860122
+
 #endif
