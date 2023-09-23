@@ -18,7 +18,7 @@
 #include <unistd.h>
 
 
-int main(void);
+
 void exe_cmd(const char *command);
 void print_function(const char *info);
 void show_prompt(void);
